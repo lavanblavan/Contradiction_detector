@@ -1,0 +1,23 @@
+2026-01-13 22:48:44,253 - INFO - Initializing Semantic Contradiction Detector...
+2026-01-13 22:48:51,103 - INFO - Starting analysis on 8 reviews.
+2026-01-13 22:49:01,144 - INFO - Review 1 - Result: CONTRADICTION FOUND (Confidence: 98.65%)
+2026-01-13 22:49:01,144 - WARNING -   [CONFLICT] Review 1: "This laptop is incredibly fast." VS "However, I find myself waiting 5 minutes just to open Chrome."
+2026-01-13 22:49:01,144 - WARNING -   [CONFLICT] Review 1: "Boot time is under 10 seconds." VS "However, I find myself waiting 5 minutes just to open Chrome."
+2026-01-13 22:49:01,144 - WARNING -   [CONFLICT] Review 1: "However, I find myself waiting 5 minutes just to open Chrome." VS "The performance is unmatched in this price range."
+2026-01-13 22:49:07,007 - INFO - Review 2 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:49:13,627 - INFO - Review 3 - Result: CONTRADICTION FOUND (Confidence: 99.58%)
+2026-01-13 22:49:13,627 - WARNING -   [CONFLICT] Review 3: "The screen cracked on the first drop though." VS "Build quality is exceptional."
+2026-01-13 22:49:17,236 - INFO - Review 4 - Result: CONTRADICTION FOUND (Confidence: 99.94%)
+2026-01-13 22:49:17,237 - WARNING -   [CONFLICT] Review 4: "Customer service was unhelpful and rude." VS "They resolved my issue within minutes and even gave me a discount."
+2026-01-13 22:49:17,237 - WARNING -   [CONFLICT] Review 4: "They resolved my issue within minutes and even gave me a discount." VS "Worst support experience I've ever had."
+2026-01-13 22:49:20,500 - INFO - Review 5 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:49:23,650 - INFO - Review 6 - Result: CONTRADICTION FOUND (Confidence: 99.02%)
+2026-01-13 22:49:23,650 - WARNING -   [CONFLICT] Review 6: "Shipping was lightning fast - arrived in 2 days." VS "The three-week wait was worth it though."
+2026-01-13 22:49:29,211 - INFO - Review 7 - Result: CONTRADICTION FOUND (Confidence: 99.96000000000001%)
+2026-01-13 22:49:29,211 - WARNING -   [CONFLICT] Review 7: "This blender is whisper quiet." VS "The noise is so loud I have to wear ear protection."
+2026-01-13 22:49:29,211 - WARNING -   [CONFLICT] Review 7: "My baby sleeps right through it." VS "Perfect for early morning smoothies."
+2026-01-13 22:49:29,211 - WARNING -   [CONFLICT] Review 7: "The noise is so loud I have to wear ear protection." VS "Perfect for early morning smoothies."
+2026-01-13 22:49:32,222 - INFO - Review 8 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:49:32,222 - INFO - Calculating final performance metrics...
+2026-01-13 22:50:04,568 - INFO - FINAL METRICS: {'accuracy': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+2026-01-13 22:50:04,570 - INFO - Analysis Complete. Results saved to log file.

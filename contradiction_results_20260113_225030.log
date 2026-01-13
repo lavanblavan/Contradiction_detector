@@ -1,0 +1,43 @@
+2026-01-13 22:50:30,078 - INFO - Initializing Semantic Contradiction Detector...
+2026-01-13 22:50:34,966 - INFO - Starting analysis on 18 reviews.
+2026-01-13 22:50:42,141 - INFO - Review 1 - Result: CONTRADICTION FOUND (Confidence: 98.65%)
+2026-01-13 22:50:42,141 - WARNING -   [CONFLICT] Review 1: "This laptop is incredibly fast." VS "However, I find myself waiting 5 minutes just to open Chrome."
+2026-01-13 22:50:42,141 - WARNING -   [CONFLICT] Review 1: "Boot time is under 10 seconds." VS "However, I find myself waiting 5 minutes just to open Chrome."
+2026-01-13 22:50:42,243 - WARNING -   [CONFLICT] Review 1: "However, I find myself waiting 5 minutes just to open Chrome." VS "The performance is unmatched in this price range."
+2026-01-13 22:50:46,487 - INFO - Review 2 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:50:50,069 - INFO - Review 3 - Result: CONTRADICTION FOUND (Confidence: 99.58%)
+2026-01-13 22:50:50,069 - WARNING -   [CONFLICT] Review 3: "The screen cracked on the first drop though." VS "Build quality is exceptional."
+2026-01-13 22:50:53,074 - INFO - Review 4 - Result: CONTRADICTION FOUND (Confidence: 99.94%)
+2026-01-13 22:50:53,074 - WARNING -   [CONFLICT] Review 4: "Customer service was unhelpful and rude." VS "They resolved my issue within minutes and even gave me a discount."
+2026-01-13 22:50:53,074 - WARNING -   [CONFLICT] Review 4: "They resolved my issue within minutes and even gave me a discount." VS "Worst support experience I've ever had."
+2026-01-13 22:50:55,135 - INFO - Review 5 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:50:57,042 - INFO - Review 6 - Result: CONTRADICTION FOUND (Confidence: 99.02%)
+2026-01-13 22:50:57,042 - WARNING -   [CONFLICT] Review 6: "Shipping was lightning fast - arrived in 2 days." VS "The three-week wait was worth it though."
+2026-01-13 22:51:00,607 - INFO - Review 7 - Result: CONTRADICTION FOUND (Confidence: 99.96000000000001%)
+2026-01-13 22:51:00,607 - WARNING -   [CONFLICT] Review 7: "This blender is whisper quiet." VS "The noise is so loud I have to wear ear protection."
+2026-01-13 22:51:00,607 - WARNING -   [CONFLICT] Review 7: "My baby sleeps right through it." VS "Perfect for early morning smoothies."
+2026-01-13 22:51:00,607 - WARNING -   [CONFLICT] Review 7: "The noise is so loud I have to wear ear protection." VS "Perfect for early morning smoothies."
+2026-01-13 22:51:02,627 - INFO - Review 8 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:51:04,635 - INFO - Review 9 - Result: CONTRADICTION FOUND (Confidence: 99.95%)
+2026-01-13 22:51:04,635 - WARNING -   [CONFLICT] Review 9: "The battery life is exceptional and easily lasts 48 hours." VS "I'm so disappointed that it dies after only 4 hours of light use."
+2026-01-13 22:51:04,635 - WARNING -   [CONFLICT] Review 9: "I'm so disappointed that it dies after only 4 hours of light use." VS "Otherwise, it's a solid device."
+2026-01-13 22:51:07,096 - INFO - Review 10 - Result: CONTRADICTION FOUND (Confidence: 99.5%)
+2026-01-13 22:51:07,099 - WARNING -   [CONFLICT] Review 10: "This vacuum is remarkably lightweight." VS "It is quite heavy to move around, but the suction power makes up for the bulk."
+2026-01-13 22:51:09,124 - INFO - Review 11 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:51:11,076 - INFO - Review 12 - Result: CONTRADICTION FOUND (Confidence: 99.96000000000001%)
+2026-01-13 22:51:11,076 - WARNING -   [CONFLICT] Review 12: "Setup was a breeze and took less than five minutes." VS "After struggling for three hours to get it connected to Wi-Fi, I finally gave up."
+2026-01-13 22:51:11,076 - WARNING -   [CONFLICT] Review 12: "After struggling for three hours to get it connected to Wi-Fi, I finally gave up." VS "I love how simple it is."
+2026-01-13 22:51:12,973 - INFO - Review 13 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:51:14,841 - INFO - Review 14 - Result: CONTRADICTION FOUND (Confidence: 99.83%)
+2026-01-13 22:51:14,842 - WARNING -   [CONFLICT] Review 14: "It’s the quietest dishwasher I’ve ever owned." VS "However, the loud grinding noise it makes during the cycle is unbearable."
+2026-01-13 22:51:14,843 - WARNING -   [CONFLICT] Review 14: "I can barely hear it running." VS "However, the loud grinding noise it makes during the cycle is unbearable."
+2026-01-13 22:51:16,513 - INFO - Review 15 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:51:18,467 - INFO - Review 16 - Result: CONTRADICTION FOUND (Confidence: 99.92999999999999%)
+2026-01-13 22:51:18,467 - WARNING -   [CONFLICT] Review 16: "Customer support was available 24/7 as promised." VS "I tried calling them at 2 PM on a Tuesday but they were closed for the day."
+2026-01-13 22:51:18,467 - WARNING -   [CONFLICT] Review 16: "I tried calling them at 2 PM on a Tuesday but they were closed for the day." VS "Very reliable service."
+2026-01-13 22:51:20,220 - INFO - Review 17 - Result: Consistent (Confidence: 100.0%)
+2026-01-13 22:51:22,243 - INFO - Review 18 - Result: CONTRADICTION FOUND (Confidence: 99.95%)
+2026-01-13 22:51:22,243 - WARNING -   [CONFLICT] Review 18: "The pizza arrived piping hot and fresh." VS "The crust was cold and soggy by the time it got to my door."
+2026-01-13 22:51:22,244 - INFO - Calculating final performance metrics...
+2026-01-13 22:52:01,185 - INFO - FINAL METRICS: {'accuracy': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+2026-01-13 22:52:01,187 - INFO - Analysis Complete. Results saved to log file.

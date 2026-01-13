@@ -10,6 +10,19 @@ import torch
 from transformers import pipeline
 import torch.nn.functional as F
 
+import logging
+from datetime import datetime
+
+# Setup logging configuration
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(f"contradiction_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"),
+        logging.StreamHandler() # This keeps the output appearing in your terminal too
+    ]
+)
+logger = logging.getLogger(__name__)
 @dataclass
 class ContradictionResult:
     has_contradiction: bool
@@ -190,21 +203,27 @@ def evaluate(detector: SemanticContradictionDetector,
 
 
 if __name__ == "__main__":
-    # Initialize detector
+    logger.info("Initializing Semantic Contradiction Detector...")
     detector = SemanticContradictionDetector()
     
-    # Run on sample data
     from sample_data import SAMPLE_REVIEWS
+    
+    logger.info(f"Starting analysis on {len(SAMPLE_REVIEWS)} reviews.")
     
     for review in SAMPLE_REVIEWS:
         result = detector.analyze(review["text"])
-        print(f"\n--- Review {review['id']} ---")
-        print(f"Result: {'CONTRADICTION FOUND' if result.has_contradiction else 'Consistent'}")
-        print(f"Confidence Score: {result.confidence * 100}%")
+        
+        # Log the main result
+        status = 'CONTRADICTION FOUND' if result.has_contradiction else 'Consistent'
+        logger.info(f"Review {review['id']} - Result: {status} (Confidence: {result.confidence * 100}%)")
+        
+        # Log specific conflicts if they exist
         if result.has_contradiction:
             for p1, p2 in result.contradicting_pairs:
-                print(f"  Conflict: \"{p1}\" VS \"{p2}\"")
+                logger.warning(f"  [CONFLICT] Review {review['id']}: \"{p1}\" VS \"{p2}\"")
 
-    # 4. Evaluate
+    # Log Final Metrics
+    logger.info("Calculating final performance metrics...")
     metrics = evaluate(detector, SAMPLE_REVIEWS)
-    print(f"\nFinal Metrics: {metrics}")
+    logger.info(f"FINAL METRICS: {metrics}")
+    logger.info("Analysis Complete. Results saved to log file.")
